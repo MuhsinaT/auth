@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
+import PhoneSignUp from "./components/PhoneSignUp";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
                 }
               />
               <Route path="/" element={<Login />} />
+              <Route path="/phonesignup" element={<PhoneSignUp />} />
+
               <Route path="/signup" element={<Signup />} />
             </Routes>
           </UserAuthContextProvider>
